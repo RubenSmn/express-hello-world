@@ -25,6 +25,6 @@ deploy-code-job:
     - ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
     - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
   script:
-    - git checkout main
+    - git checkout -b main
     - git merge feature
     - git push origin main
