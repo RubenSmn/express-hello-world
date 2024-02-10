@@ -31,4 +31,4 @@ deploy-code-job:
       fi
     - git checkout -b main
     - git merge origin/feature
-    - git push github main
+    - git push github main -f
