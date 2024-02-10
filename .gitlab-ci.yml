@@ -26,5 +26,5 @@ deploy-code-job:
     - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
   script:
     - git checkout -b main
-    - git merge feature
+    - git merge origin/feature
     - git push origin main
